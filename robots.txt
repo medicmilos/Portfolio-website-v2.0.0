@@ -1,0 +1,3 @@
+User-agent: *
+sitemap: http://milosmedic.com/sitemap.xml
+Disallow:
