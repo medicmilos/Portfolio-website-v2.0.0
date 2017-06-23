@@ -99,6 +99,10 @@ h3
   text-transform: uppercase
 
 header
+  nav
+    position: absolute
+    right: 0
+    z-index: 800
   nav a, .kicker
     font-size: 14px
     font-weight: 700
@@ -114,7 +118,17 @@ header, footer
   background-size: 50px 50px,cover
   background-position: 30px 50px,50% 50%
   background-blend-mode: overlay,normal
+@media (max-width: 767px)
+  header
 
+    nav
+      float: none !important
+      padding-top: 0px
+      a
+        width: 100%
+        font-size: 1.5em
+    h1
+      padding-top: 50px
 @media screen and (max-width: 480px)
   h3
     padding: 50px 0 50px
@@ -283,6 +297,10 @@ label
       left: 0px
     h4
       margin-left: 60px
+  .section-work .thumb-wrap
+    width: 78% !important
+  .section-work .thumb-container label
+    width: 100% !important
 
 /* Section contact
   ------------------------------------	*/
@@ -339,6 +357,8 @@ label
   line-height: 1
   width: 90%
   margin: 0 auto
+.help-block
+  color: #b92e24
 
 /* Section about
   ------------------------------------	*/
@@ -372,7 +392,8 @@ label
       margin: 0 auto 30px
     [class^="icon-"]
       margin: 10px 9%
-
+  textarea
+    width: 200% !important
 .blurb
   max-width: 620px
   padding: 0 20px
@@ -515,9 +536,14 @@ form
     color: white
     font-size: 18px
     text-transform: uppercase
-    width: 33%
+    width: 40%
+    height: 3em
+    border: none
     &:hover
-      background: #cd8a6d
+      background: #fff
+      color: $orange
+      cursor: pointer
+      border: 1px solid $orange
 
   .contact-info-group
     label
@@ -580,6 +606,28 @@ footer
 
         &:hover
           color: rgba(255, 255, 255, 0.95)
+@media (max-width: 767px)
+  footer
+    background-image: url(),url(../img/hero-bg.jpg)
+    .lockup
+      padding: 50px 30px
+      &::after
+        content: ""
+        display: table
+        clear: both
+
+      .content-wrap
+        float: none
+        margin-left: 0px
+        text-align: center
+
+        a
+          color: rgb(220, 218, 215)
+          display: inline-block
+          width: 100%
+
+          &:hover
+            color: rgba(255, 255, 255, 0.95)
 /* Loader
   ------------------------------------	*/
 .thumb-container
@@ -599,30 +647,6 @@ footer
   margin-top: 1px
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .view
   .mask, .content
@@ -699,8 +723,9 @@ footer
       transition-delay: 0.1s
     a.info
       transition-delay: 0.2s
-
-
 #map
   height: 37.500em
   width: 100%
+#canvas
+  z-index: 50
+  position: absolute

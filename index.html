@@ -10,13 +10,20 @@
       <meta name=author content="Miloš Medić">
       <meta name=copyright content="Miloš Medić @ 2017">
 
-      <link rel="stylesheet" href="http://localhost:1234/Portfolio-Praktikum/assets/css/main.css">
-      <link rel="stylesheet" href="http://localhost:1234/Portfolio-Praktikum/assets/css/font-awesome.min.css">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-      <script src="http://localhost:1234/Portfolio-Praktikum/assets/js/functions.js"></script>
+      <link rel="stylesheet" href="assets/css/main.css">
+      <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+<script src="http://formvalidation.io/vendor/formvalidation/js/formValidation.min.js"></script>
+<script src="http://formvalidation.io/vendor/formvalidation/js/framework/bootstrap.min.js"></script>
+      <script src="assets/js/functions.js"></script>
     </head>
     <body>
+
         <header id="header">
+          <canvas id="canvas" width="1800" height="380"></canvas>
+			<center>
             <nav>
                 <a href="#about-me">About Me</a>
                 <a href="#work">Work</a>
@@ -25,6 +32,7 @@
             <h1><span>MILOŠ MEDIĆ</span></h1>
             <p class="kicker">FRONTEND DEVELOPER INTERN // STUDENT</p>
         </header>
+
         <section>
             <h3 id="about-me">About Myself</h3>
             <div class="face-lockup">
@@ -161,7 +169,6 @@
                 </div>
             </div>
         </section>
-
         <section class="section-work">
             <h3 id="work">Work</h3>
             <input type="radio" name="trigger" class="trigger" id="" />
@@ -169,82 +176,64 @@
             <div class="work-belt">
                 <div class="thumb-wrap">
                     <div class="thumb-container">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                         <label for="proj-1">
                             <div class="view view-first">
-                              <div class="thumb-unit" data-url="http://localhost:1234/Portfolio-Praktikum/work/proj-1/">
-                                    <img src="http://localhost:1234/Portfolio-Praktikum/assets/img/work/proj-1/thumb.jpg" />
+                              <div class="thumb-unit">
+                                    <img src="assets/img/work/proj-1/img1.jpg" alt=""/>
                               </div>
                               <div class="thumb-overlay">
-                                  <strong>TYPO International Design Talks</strong>
                               </div>
+                              <a href="http://network.milosmedic.com/" target="_blank">
                                 <div class="mask">
-                                    <h2>Click for details</h2>
-                                    <p>Naiv projekta mog</p>
+                                  <h2>Click to visit</h2>
+                                  <p>Social network is an online community of people who use a website to communicate with each other by posting, and share information</p>
                                 </div>
+                              </a>
                             </div>
                         </label>
                         <label for="proj-2">
                           <div class="view view-first">
-                            <div class="thumb-unit" data-url="https://devtips.github.io/Artists-Theme/work/proj-2/">
-                                <img src="https://devtips.github.io/Artists-Theme/assets/img/work/proj-2/thumb.jpg" alt="City-IN website concept" />
+                            <div class="thumb-unit">
+                                <img src="assets/img/work/proj-2/img1.jpg" alt=""/>
                             </div>
                             <div class="thumb-overlay">
-                                <strong>City-IN website concept</strong>
                             </div>
-                            <div class="mask">
-                                <h2>Click for details</h2>
-                                <p>Naiv projekta mog</p>
-                            </div>
+                            <a href="http://network.milosmedic.com/" target="_blank">
+                              <div class="mask">
+                                <h2>Click to visit</h2>
+                                <p>Social network is an online community of people who use a website to communicate with each other by posting, and share information</p>
+                              </div>
+                            </a>
                             </div>
                         </label>
                         <label for="proj-3">
                           <div class="view view-first">
-                            <div class="thumb-unit" data-url="https://devtips.github.io/Artists-Theme/work/proj-3/">
-                                <img src="https://devtips.github.io/Artists-Theme/assets/img/work/proj-3/thumb.jpg" alt="Crispy Icons" />
+                            <div class="thumb-unit">
+                              <img src="assets/img/work/proj-3/img1.jpg" alt=""/>
                             </div>
                             <div class="thumb-overlay">
-                                <strong>Crispy Icons</strong>
                             </div>
-                            <div class="mask">
-                                <h2>Click for details</h2>
-                                <p>Naiv projekta mog</p>
-                            </div>
+                            <a href="http://network.milosmedic.com/" target="_blank">
+                              <div class="mask">
+                                <h2>Click to visit</h2>
+                                <p>Social network is an online community of people who use a website to communicate with each other by posting, and share information</p>
+                              </div>
+                            </a>
                             </div>
                         </label>
                         <label for="proj-4">
                           <div class="view view-first">
-                            <div class="thumb-unit" data-url="https://devtips.github.io/Artists-Theme/work/proj-4/">
-                                <img src="https://devtips.github.io/Artists-Theme/assets/img/work/proj-4/thumb.jpg" alt="Flat Mobile UI/UX Concept" />
+                            <div class="thumb-unit">
+                                <img src="assets/img/work/proj-4/img1.jpg" alt=""/>
                             </div>
                             <div class="thumb-overlay">
-                                <strong>Flat Mobile UI/UX Concept</strong>
                             </div>
-                            <div class="mask">
-                                <h2>Click for details</h2>
-                                <p>Naiv projekta mog</p>
-                            </div>
+                            <a href="http://network.milosmedic.com/" target="_blank">
+                              <div class="mask">
+                                <h2>Click to visit</h2>
+                                <p>Social network is an online community of people who use a website to communicate with each other by posting, and share information</p>
+                              </div>
+                            </a>
                         </label>
                         </div>
                     </div>
@@ -290,30 +279,31 @@
         </section>
         <section>
             <h3>Let's work together</h3>
-            <form action="https://formspree.io/contact@milosmedic.com" method="POST"  ><!-- onsubmit="return contactformsend();" -->
+            <!--  onsubmit="return contactformsend();" -->
+             <form action="https://formspree.io/contact@milosmedic.com" method="POST" id="contactForm">
                 <fieldset class="contact-info-group">
                       <label>
-                        <span>Your Name</span>
+                        <span>Your Full Name</span>
+                        <div class="col-xs-5">
                         <input type="text" name="name" id="">
-                        <ul class="error-message">
-                          <li>Please enter your full name.</li>
-                        </ul>
+                        </div>
                       </label>
                     <label>
                       <span>Your Email</span>
-                        <input type="email" name="_replyto" id="fullname"></label>
-                        <ul class="error-message">
-                          <li>Please enter valid email address.</li>
-                        </ul>
+                      <div class="col-xs-5">
+                        <input type="email" name="_replyto" id="fullname"></div>
+                  </label>
+
                 </fieldset>
 
                 <label><span>Tell me about your project</span>
-                    <textarea name="message" id="message"></textarea></label>
-                    <ul class="error-message">
-                        <li>Please enter at least 10 letters long message.</li>
-                    </ul>
+                <div class="col-xs-5">
+                    <textarea name="message" id="message"></textarea>
+                    </div>
+                  </label>
+
                 <fieldset class="submit-wrap">
-                    <button type="submit" class="submit col-12 btn-1 " value="Send" onclick="return contactformsend();">Send message</button>
+                    <button type="submit" class="" value="Send">Send message</button>
                 </fieldset>
             </form>
         </section>
@@ -329,10 +319,7 @@
                 </div>
             </div>
         </footer>
-
-
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWsAri1rc05aobkJxb9dcUgeEW0zr3neA&callback=initMap"
 type="text/javascript"></script>
-
     </body>
 </html>

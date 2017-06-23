@@ -87,6 +87,11 @@ h3 {
   font-weight: 700;
   text-transform: uppercase; }
 
+header nav {
+  position: absolute;
+  right: 0;
+  z-index: 800; }
+
 header nav a, header .kicker {
   font-size: 14px;
   font-weight: 700;
@@ -102,6 +107,16 @@ header, footer {
   background-size: 50px 50px,cover;
   background-position: 30px 50px,50% 50%;
   background-blend-mode: overlay,normal; }
+
+@media (max-width: 767px) {
+  header nav {
+    float: none !important;
+    padding-top: 0px; }
+    header nav a {
+      width: 100%;
+      font-size: 1.5em; }
+  header h1 {
+    padding-top: 50px; } }
 
 @media screen and (max-width: 480px) {
   h3 {
@@ -284,7 +299,11 @@ label {
   .work-container .work-return {
     left: 0px; }
   .work-container h4 {
-    margin-left: 60px; } }
+    margin-left: 60px; }
+  .section-work .thumb-wrap {
+    width: 78% !important; }
+  .section-work .thumb-container label {
+    width: 100% !important; } }
 
 /* Section contact
   ------------------------------------	*/
@@ -355,6 +374,9 @@ label {
   width: 90%;
   margin: 0 auto; }
 
+.help-block {
+  color: #b92e24; }
+
 /* Section about
   ------------------------------------	*/
 .face-lockup {
@@ -393,7 +415,9 @@ label {
       background-repeat: no-repeat;
       margin: 0 auto 30px; }
     .face-lockup [class^="icon-"] {
-      margin: 10px 9%; } }
+      margin: 10px 9%; }
+  textarea {
+    width: 200% !important; } }
 
 .blurb {
   max-width: 620px;
@@ -568,9 +592,14 @@ form {
     color: white;
     font-size: 18px;
     text-transform: uppercase;
-    width: 33%; }
+    width: 40%;
+    height: 3em;
+    border: none; }
     form [type="submit"]:hover {
-      background: #cd8a6d; }
+      background: #fff;
+      color: #cd8a6d;
+      cursor: pointer;
+      border: 1px solid #cd8a6d; }
   form .contact-info-group label {
     width: 50%;
     float: left;
@@ -627,6 +656,26 @@ footer {
         margin-right: 30px; }
         footer .lockup .content-wrap a:hover {
           color: rgba(255, 255, 255, 0.95); }
+
+@media (max-width: 767px) {
+  footer {
+    background-image: url(), url(../img/hero-bg.jpg); }
+    footer .lockup {
+      padding: 50px 30px; }
+      footer .lockup::after {
+        content: "";
+        display: table;
+        clear: both; }
+      footer .lockup .content-wrap {
+        float: none;
+        margin-left: 0px;
+        text-align: center; }
+        footer .lockup .content-wrap a {
+          color: #dcdad7;
+          display: inline-block;
+          width: 100%; }
+          footer .lockup .content-wrap a:hover {
+            color: rgba(255, 255, 255, 0.95); } }
 
 /* Loader
   ------------------------------------	*/
@@ -761,3 +810,7 @@ footer {
 #map {
   height: 37.500em;
   width: 100%; }
+
+#canvas {
+  z-index: 50;
+  position: absolute; }
