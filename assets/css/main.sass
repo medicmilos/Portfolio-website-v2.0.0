@@ -97,12 +97,12 @@ h3
   font-size: 14px
   font-weight: 700
   text-transform: uppercase
-
 header
+  z-index: 800 !important
   nav
     position: absolute
     right: 0
-    z-index: 800
+    z-index: 850
   nav a, .kicker
     font-size: 14px
     font-weight: 700
@@ -120,10 +120,10 @@ header, footer
   background-blend-mode: overlay,normal
 @media (max-width: 767px)
   header
-
     nav
       float: none !important
-      padding-top: 0px
+      padding: 0px !important
+      position: inherit
       a
         width: 100%
         font-size: 1.5em
@@ -151,6 +151,7 @@ header
     position: 30px 20px, 50% 50%
     image: url(),url(../img/hero-bg.jpg)
   padding-bottom: 50px
+  position: relative
   nav
     float: right
     padding: 30px 30px 0 0
@@ -729,3 +730,5 @@ footer
 #canvas
   z-index: 50
   position: absolute
+  width: 100%
+  height: 100%
